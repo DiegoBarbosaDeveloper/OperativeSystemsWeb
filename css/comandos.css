@@ -1,0 +1,322 @@
+/* Estilos base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Barra superior */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  font-size: 2rem;
+  color: #3b82f6;
+  margin-right: 0.5rem;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.title p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Botón modo noche */
+.mode-btn {
+  margin-left: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mode-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Sección promocional pantalla completa */
+.promo {
+  height: 100vh; /* ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #1e3a8a, #2563eb);
+  color: #ffffff;
+}
+
+.promo .tag {
+  display: inline-block;
+  background-color: rgba(255,255,255,0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.promo h2 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0 1.5rem;
+  color: #e0f2fe;
+}
+
+.promo-btn {
+  background-color: #3b82f6;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.promo-btn:hover {
+  background-color: #2563eb;
+}
+.tag {
+  display: inline-block;
+  background-color: rgba(255,255,255,0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem; /* un poco más grande */
+  margin-bottom: 1rem;
+}
+
+.promo-main {
+  font-size: 3.5rem; /* más grande que antes */
+  margin: 0.5rem 0 1.5rem;
+  font-weight: bold;
+  color: #e0f2fe; /* azul claro */
+  text-align: center;
+}
+
+
+/* Modo claro */
+body.light .header {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: #ffffff;
+}
+
+body.light .nav a,
+body.light .mode-btn {
+  color: #ffffff;
+}
+
+/* Modo oscuro */
+body.dark {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+body.dark .header {
+  background: linear-gradient(90deg, #0a0a0a, #1e293b);
+  color: #ffffff;
+}
+
+body.dark .nav a,
+body.dark .mode-btn {
+  color: #ffffff;
+}
+
+body.dark .promo {
+  background: linear-gradient(180deg, #0a0a0a, #1e293b);
+}
+
+/* === Main === */
+.commands {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.commands h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  padding-bottom: 0.3rem;
+}
+
+/* === Filtros === */
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.filter.active,
+.filter:hover {
+  background: #4a90e2;   /* Azul profesional */
+  color: #fff;
+  border-color: #357ab8; /* Azul más oscuro para contraste */
+}
+
+
+/* === Barra de búsqueda === */
+.search-bar {
+  margin-bottom: 1.5rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* === Grid de comandos === */
+.command-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.command {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+body.dark .command {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+.command:hover {
+  transform: translateY(-3px);
+}
+
+.command h3 {
+  margin-bottom: 0.5rem;
+  color: #00aaff;
+}
+
+.command pre {
+  background: #f4f4f4;
+  padding: 0.7rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+body.dark .command pre {
+  background: #1e1e1e;
+
+/* botonoes de interacción */
+.filter {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #ccc;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.filter.active {
+  background: #4a90e2;   /* Azul decente */
+  color: #fff;
+  border-color: #357ab8;
+}}
+/* boton de los comandos ejemplo */
+.example-btn {
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  background: #4a90e2;   /* Azul decente */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.example-btn:hover {
+  background: #357ab8;   /* Azul más oscuro al pasar el mouse */
+}
+.example-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  background: #4a90e2;   /* Azul decente */
+  color: #fff;
+  text-decoration: none; /* Quita el subrayado */
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.example-btn:hover {
+  background: #357ab8;   /* Azul más oscuro al pasar el mouse */
+}
+
+/*imagen comandos*/
+.command-image img {
+  max-width: 1000px;   /* Ajusta el ancho máximo */
+  height: auto;       /* Mantiene la proporción */
+  display: block;
+  margin: 1rem auto;  /* Centra la imagen */
+  border-radius: 6px; /* Opcional: esquinas redondeadas */
+}
+/* botones de cmd y powershell */
+.mode-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mode-option {
+  flex: 1;
+  padding: 0.6rem 1.2rem;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.mode-option.active {
+  background: #fff;
+  font-weight: bold;
+}
+
+.mode-option:not(.active):hover {
+  background: #ddd;
+}

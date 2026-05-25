@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagnóstico y Herramientas de Soporte TI</title>
+
+<link rel="stylesheet" href="../css/tercer.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="light">
+
+<header class="header">
+
+    <div class="logo">
+        <span class="prompt">&gt;_</span>
+
+        <div class="title">
+            <h1>WinCmd Reference</h1>
+            <p>CMD y PowerShell</p>
+        </div>
+    </div>
+
+    <nav class="nav">
+
+        <a href="../index.html">Inicio</a>
+
+        <div class="corte-buttons">
+            <a href="primer.html" class="corte-btn">Primer corte</a>
+            <a href="segundo-corte.html" class="corte-btn">Segundo corte</a>
+            <a href="tercer-corte.html" class="corte-btn">Tercer corte</a>
+        </div>
+
+        <button class="mode-btn" id="toggleMode">🌙</button>
+
+    </nav>
+
+</header>
+
+<!-- BANNER -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Diagnóstico y Herramientas de Soporte TI</h1>
+
+        <div class="line"></div>
+
+        <p>
+            Aprende a utilizar herramientas esenciales para el diagnóstico,
+            mantenimiento y soporte técnico de computadores.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- TARJETAS -->
+
+<section class="cards">
+
+    <a href="#acceso-remoto" class="card red">
+        <span>01</span>
+        <h3>Herramientas de Acceso Remoto</h3>
+        <p>AnyDesk y TeamViewer</p>
+    </a>
+
+    <a href="#comparativa" class="card blue">
+        <span>02</span>
+        <h3>Comparativa y Nivel de Acceso</h3>
+        <p>Seguridad y rendimiento</p>
+    </a>
+
+    <a href="#ram" class="card cyan">
+        <span>03</span>
+        <h3>Diagnóstico RAM y Procesador</h3>
+        <p>CPU-Z, MemTest86 y OCCT</p>
+    </a>
+
+    <a href="#almacenamiento" class="card green">
+        <span>04</span>
+        <h3>Diagnóstico de Almacenamiento</h3>
+        <p>CrystalDiskInfo y HD Tune</p>
+    </a>
+
+    <a href="#perifericos" class="card purple">
+        <span>05</span>
+        <h3>Diagnóstico de Periféricos</h3>
+        <p>Teclado, cámara y USB</p>
+    </a>
+
+    <a href="#conclusiones" class="card orange">
+        <span>06</span>
+        <h3>Conclusiones</h3>
+        <p>Buenas prácticas</p>
+    </a>
+
+</section>
+
+<!-- SECCIÓN 1 -->
+
+<section id="acceso-remoto" class="content-section">
+
+    <h2>01. Herramientas de Acceso Remoto</h2>
+
+    <p>
+        Las herramientas de acceso remoto permiten conectarse a otro equipo
+        mediante internet para realizar tareas de soporte técnico,
+        administración de sistemas, mantenimiento preventivo y asistencia
+        a usuarios sin necesidad de estar físicamente presentes.
+    </p>
+
+    <div class="info-grid">
+
+        <div>
+            <img src="../imagenes/tercer/0.png" alt="AnyDesk">
+        </div>
+
+        <div>
+
+            <h3>AnyDesk</h3>
+
+            <p>
+                AnyDesk es una de las soluciones de acceso remoto más utilizadas
+                gracias a su rapidez, bajo consumo de recursos y facilidad de uso.
+                Permite controlar equipos remotos de forma segura y eficiente.
+            </p>
+
+            <ul>
+                <li>Conexión rápida y estable.</li>
+                <li>Bajo consumo de recursos.</li>
+                <li>Transferencia de archivos.</li>
+                <li>Acceso remoto desatendido.</li>
+                <li>Compatible con Windows, Linux y macOS.</li>
+            </ul>
+
+            <h4>Ventajas</h4>
+
+            <ul>
+                <li>Configuración sencilla.</li>
+                <li>Excelente rendimiento.</li>
+                <li>Interfaz intuitiva.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="info-grid">
+
+        <div>
+            <img src="../imagenes/tercer/1.png" alt="TeamViewer">
+        </div>
+
+        <div>
+
+            <h3>TeamViewer</h3>
+
+            <p>
+                TeamViewer es una plataforma profesional de acceso remoto
+                utilizada ampliamente en empresas para soporte técnico,
+                administración de dispositivos y colaboración remota.
+            </p>
+
+            <ul>
+                <li>Acceso remoto seguro.</li>
+                <li>Transferencia de archivos.</li>
+                <li>Soporte multiplataforma.</li>
+                <li>Chat integrado.</li>
+                <li>Control remoto de múltiples equipos.</li>
+            </ul>
+
+            <h4>Características destacadas</h4>
+
+            <ul>
+                <li>Cifrado AES de 256 bits.</li>
+                <li>Autenticación de doble factor.</li>
+                <li>Gestión centralizada de dispositivos.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SECCIÓN 2 -->
+
+<section id="comparativa" class="content-section">
+
+    <h2>02. Comparativa y Nivel de Acceso</h2>
+
+    <p>
+        Tanto AnyDesk como TeamViewer ofrecen funcionalidades similares,
+        aunque cada herramienta está orientada a diferentes escenarios
+        de trabajo y necesidades empresariales.
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Herramienta</th>
+            <th>Seguridad</th>
+            <th>Facilidad</th>
+            <th>Rendimiento</th>
+        </tr>
+
+        <tr>
+            <td>AnyDesk</td>
+            <td>★★★★☆</td>
+            <td>★★★★★</td>
+            <td>★★★★★</td>
+        </tr>
+
+        <tr>
+            <td>TeamViewer</td>
+            <td>★★★★★</td>
+            <td>★★★★☆</td>
+            <td>★★★★☆</td>
+        </tr>
+
+    </table>
+
+    <h3>Comparación General</h3>
+
+    <p>
+        AnyDesk destaca por su velocidad y ligereza, siendo ideal para
+        soporte técnico rápido y conexiones remotas frecuentes.
+        Por otro lado, TeamViewer ofrece funciones empresariales avanzadas
+        como administración centralizada, reuniones virtuales y herramientas
+        de colaboración.
+    </p>
+
+    <p>
+        La elección dependerá de los requerimientos específicos del usuario.
+        Para tareas sencillas y rápidas suele preferirse AnyDesk, mientras que
+        TeamViewer es una excelente opción para entornos corporativos.
+    </p>
+
+</section>
+
+<!-- SECCIÓN 3 -->
+
+<section id="ram" class="content-section">
+
+    <h2>03. Diagnóstico RAM y Procesador</h2>
+
+    <div class="gallery">
+
+        <img src="../imagenes/tercer/2.webp" alt="CPU-Z">
+        <img src="../imagenes/tercer/3.jpg" alt="MemTest86">
+        <img src="../imagenes/tercer/1.jpeg" alt="OCCT">
+
+    </div>
+
+    <p>
+        Estas herramientas permiten analizar el rendimiento del procesador,
+        verificar la memoria RAM y detectar posibles problemas de estabilidad
+        o fallos físicos en el hardware.
+    </p>
+
+    <h3>CPU-Z</h3>
+
+    <p>
+        CPU-Z proporciona información detallada del procesador,
+        memoria RAM, placa base y tarjeta gráfica instalada.
+        Es ampliamente utilizada para identificar componentes
+        y verificar especificaciones técnicas.
+    </p>
+
+    <h3>MemTest86</h3>
+
+    <p>
+        MemTest86 realiza pruebas exhaustivas sobre la memoria RAM para
+        detectar errores que puedan provocar bloqueos, reinicios inesperados
+        o pantallazos azules.
+    </p>
+
+    <h3>OCCT</h3>
+
+    <p>
+        OCCT permite realizar pruebas de estrés al procesador,
+        memoria RAM y tarjeta gráfica para comprobar la estabilidad
+        del sistema bajo cargas elevadas.
+    </p>
+
+    <h3>Beneficios del diagnóstico preventivo</h3>
+
+    <ul>
+        <li>Detección temprana de errores.</li>
+        <li>Prevención de fallos graves.</li>
+        <li>Mayor estabilidad del sistema.</li>
+        <li>Optimización del rendimiento.</li>
+        <li>Incremento de la vida útil del hardware.</li>
+    </ul>
+
+</section>
+<!-- SECCIÓN 4 -->
+
+<section id="almacenamiento" class="content-section">
+
+    <h2>04. Diagnóstico de Almacenamiento</h2>
+
+    <div class="gallery">
+
+        <img src="../imagenes/tercer/2.png" alt="CrystalDiskInfo">
+        <img src="../imagenes/tercer/5.jpg" alt="HD Tune">
+
+    </div>
+
+    <p>
+        Las unidades de almacenamiento son fundamentales para el funcionamiento
+        del sistema operativo y la conservación de los datos. Un diagnóstico
+        periódico permite detectar problemas antes de que provoquen pérdida
+        de información o fallos graves en el equipo.
+    </p>
+
+    <h3>CrystalDiskInfo</h3>
+
+    <p>
+        CrystalDiskInfo es una herramienta especializada en el monitoreo del
+        estado de salud de discos duros HDD y unidades SSD. Utiliza la
+        tecnología SMART (Self-Monitoring, Analysis and Reporting Technology)
+        para mostrar información detallada sobre el estado del dispositivo.
+    </p>
+
+    <ul>
+        <li>Temperatura del disco.</li>
+        <li>Horas de funcionamiento.</li>
+        <li>Estado general de salud.</li>
+        <li>Alertas de posibles fallos.</li>
+        <li>Información SMART detallada.</li>
+    </ul>
+
+    <h3>HD Tune</h3>
+
+    <p>
+        HD Tune permite evaluar el rendimiento del almacenamiento mediante
+        pruebas de velocidad, análisis de sectores defectuosos y monitoreo
+        de parámetros del disco.
+    </p>
+
+    <ul>
+        <li>Benchmark de velocidad.</li>
+        <li>Prueba de lectura y escritura.</li>
+        <li>Detección de sectores dañados.</li>
+        <li>Monitoreo de temperatura.</li>
+        <li>Información técnica del dispositivo.</li>
+    </ul>
+
+    <h3>Importancia del diagnóstico de discos</h3>
+
+    <p>
+        Un disco con errores puede provocar lentitud, bloqueos del sistema,
+        corrupción de archivos y pérdida de información importante. Por esta
+        razón es recomendable realizar verificaciones periódicas para conocer
+        el estado real del almacenamiento.
+    </p>
+
+</section>
+
+<!-- SECCIÓN 5 -->
+
+<section id="perifericos" class="content-section">
+
+    <h2>05. Diagnóstico de Periféricos</h2>
+
+    <div class="gallery">
+
+        <img src="../imagenes/tercer/6.jpg" alt="Teclado">
+        <img src="../imagenes/tercer/3.webp" alt="Camara">
+        <img src="../imagenes/tercer/1.avif" alt="USB">
+
+    </div>
+
+    <p>
+        Los periféricos permiten la interacción entre el usuario y el equipo.
+        Su correcto funcionamiento es esencial para garantizar una experiencia
+        de uso adecuada y mantener la productividad.
+    </p>
+
+    <h3>Diagnóstico del Teclado</h3>
+
+    <p>
+        El teclado debe evaluarse para verificar que todas las teclas respondan
+        correctamente y que no existan fallos de conexión o desgaste físico.
+    </p>
+
+    <ul>
+        <li>Prueba individual de teclas.</li>
+        <li>Verificación de respuesta.</li>
+        <li>Comprobación de teclas especiales.</li>
+        <li>Revisión de conectividad USB o inalámbrica.</li>
+    </ul>
+
+    <h3>Diagnóstico de Cámara Web</h3>
+
+    <p>
+        La cámara debe comprobarse para garantizar una imagen clara y el
+        funcionamiento adecuado de los controladores instalados.
+    </p>
+
+    <ul>
+        <li>Verificación de imagen.</li>
+        <li>Comprobación de resolución.</li>
+        <li>Prueba de funcionamiento en videollamadas.</li>
+        <li>Revisión de permisos del sistema.</li>
+    </ul>
+
+    <h3>Diagnóstico de Puertos USB</h3>
+
+    <p>
+        Los puertos USB permiten conectar dispositivos externos como memorias,
+        impresoras, teclados y discos externos.
+    </p>
+
+    <ul>
+        <li>Detección de dispositivos.</li>
+        <li>Pruebas de transferencia.</li>
+        <li>Verificación de energía suministrada.</li>
+        <li>Comprobación de controladores.</li>
+    </ul>
+
+    <h3>Beneficios de revisar los periféricos</h3>
+
+    <ul>
+        <li>Evitar interrupciones en el trabajo.</li>
+        <li>Detectar fallos físicos tempranos.</li>
+        <li>Garantizar compatibilidad con el sistema.</li>
+        <li>Mejorar la experiencia del usuario.</li>
+    </ul>
+
+</section>
+
+<!-- SECCIÓN 6 -->
+
+<section id="conclusiones" class="content-section">
+
+    <h2>06. Conclusiones</h2>
+
+    <p>
+        El diagnóstico de hardware y software es una actividad fundamental
+        dentro del soporte técnico. Gracias a las herramientas analizadas es
+        posible detectar problemas de forma temprana, optimizar el rendimiento
+        y prolongar la vida útil de los equipos informáticos.
+    </p>
+
+    <p>
+        Las aplicaciones de acceso remoto facilitan la asistencia técnica a
+        distancia, mientras que las herramientas de diagnóstico permiten
+        identificar errores en memoria RAM, procesadores, discos y periféricos.
+    </p>
+
+    <h3>Principales aprendizajes</h3>
+
+    <ul>
+        <li>Uso de herramientas de acceso remoto.</li>
+        <li>Comparación de plataformas de soporte.</li>
+        <li>Diagnóstico de procesadores y memoria RAM.</li>
+        <li>Evaluación del estado de discos HDD y SSD.</li>
+        <li>Pruebas de periféricos y dispositivos externos.</li>
+    </ul>
+
+    <h3>Recomendaciones Finales</h3>
+
+    <ul>
+        <li>Realizar mantenimiento preventivo periódicamente.</li>
+        <li>Mantener actualizado el sistema operativo.</li>
+        <li>Actualizar controladores de hardware.</li>
+        <li>Monitorear temperaturas del equipo.</li>
+        <li>Realizar copias de seguridad frecuentes.</li>
+        <li>Utilizar software de diagnóstico confiable.</li>
+        <li>Verificar regularmente la salud de los discos.</li>
+        <li>Revisar el funcionamiento de los periféricos.</li>
+    </ul>
+
+</section>
+
+<!-- BOTÓN VOLVER ARRIBA -->
+
+<button id="topBtn">↑</button>
+
+<script src="../js/movi.js"></script>
+
+</body>
+</html>

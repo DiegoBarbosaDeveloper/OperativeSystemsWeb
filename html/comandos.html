@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WinCmd Reference</title>
+  <link rel="stylesheet" href="../css/comandos.css" />
+</head>
+<body class="light">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <span class="prompt">&gt;_</span>
+      <div class="title">
+        <h1>WinCmd Reference</h1>
+        <p>CMD &amp; PowerShell</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="../index.html">Inicio</a>
+      
+      <button id="toggleMode" class="mode-btn">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="commands">
+    <h2>Referencia de Comandos</h2>
+
+    <!-- Toggle CMD / PowerShell -->
+    <div class="mode-switch">
+        <button class="mode-option active" data-mode="cmd">CMD</button>
+        <button class="mode-option" data-mode="powershell">PowerShell</button>
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar comando..." />
+    </div>
+
+    <!-- Filtros -->
+    <div class="filters">
+      <button class="filter active" data-filter="all">Todos</button>
+    </div>
+
+    <!-- Grid de comandos -->
+    <div class="command-grid">
+      <section class="command" data-mode="cmd">
+        <h3>dir</h3>
+        <p><strong>Descripción:</strong> Lista archivos y carpetas en el directorio actual</p>
+        <p><strong>Sintaxis:</strong> <code>dir [ruta] [/opciones]</code></p>
+        <pre><code>dir /s
+dir C:\Users /a</code></pre>
+        <a href="dir.html" class="example-btn">Ejemplo</a>
+      </section>
+
+      <section class="command" data-mode="cmd">
+        <h3>cd</h3>
+        <p><strong>Descripción:</strong> Cambia el directorio actual</p>
+        <p><strong>Sintaxis:</strong> <code>cd [ruta]</code></p>
+        <pre><code>cd C:\Users\Documents
+cd ..</code></pre>
+        <a href="cd.html" class="example-btn">Ejemplo</a>
+      </section>
+
+      <section class="command" data-mode="cmd">
+        <h3>mkdir</h3>
+        <p><strong>Descripción:</strong> Crea un nuevo directorio</p>
+        <p><strong>Sintaxis:</strong> <code>mkdir [nombre]</code></p>
+        <pre><code>mkdir Proyectos</code></pre>
+        <a href="mkdir.html" class="example-btn">Ejemplo</a>
+      </section>
+
+      <section class="command" data-mode="cmd">
+        <h3>del</h3>
+        <p><strong>Descripción:</strong> Elimina archivos</p>
+        <p><strong>Sintaxis:</strong> <code>del [archivo]</code></p>
+        <pre><code>del archivo.txt</code></pre>
+        <a href="del.html" class="example-btn">Ejemplo</a>
+      </section>
+
+      <section class="command" data-mode="cmd">
+        <h3>copy</h3>
+        <p><strong>Descripción:</strong> Copia archivos</p>
+        <p><strong>Sintaxis:</strong> <code>copy origen destino</code></p>
+        <pre><code>copy datos.txt D:\Backup</code></pre>
+        <a href="copy.html" class="example-btn">Ejemplo</a>
+      </section>
+
+      <section class="command" data-mode="cmd">
+        <h3>move</h3>
+        <p><strong>Descripción:</strong> Mueve archivos</p>
+        <p><strong>Sintaxis:</strong> <code>move origen destino</code></p>
+        <pre><code>move datos.txt D:\Backup</code></pre>
+        <a href="move.html" class="example-btn">Ejemplo</a>
+      </section>
+
+      <section class="command" data-mode="cmd">
+        <h3>ipconfig</h3>
+        <p><strong>Descripción:</strong> Muestra configuración de red</p>
+        <p><strong>Sintaxis:</strong> <code>ipconfig [/opciones]</code></p>
+        <pre><code>ipconfig /all</code></pre>
+        <a href="ipconfig.html" class="example-btn">Ejemplo</a>
+      </section>
+
+      <section class="command" data-mode="cmd">
+        <h3>tasklist</h3>
+        <p><strong>Descripción:</strong> Lista procesos en ejecución</p>
+        <p><strong>Sintaxis:</strong> <code>tasklist</code></p>
+        <pre><code>tasklist</code></pre>
+        <a href="tasklist.html" class="example-btn">Ejemplo</a>
+      </section>
+
+      <!-- Ejemplo PowerShell -->
+      <section class="command" data-mode="powershell">
+        <h3>Get-Help</h3>
+        <p><strong>Descripción:</strong> Muestra ayuda sobre comandos y su uso.</p>
+        <p><strong>Sintaxis:</strong> <code>Get-ChildItem [ruta] [-opciones]</code></p>
+        <pre><code>Get-ChildItem -Recurse
+Get-ChildItem C:\Users -Force</code></pre>
+        <a href="get-childitem.html" class="example-btn">Ejemplo</a>
+      </section>
+      <section class="command" data-mode="powershell">
+        <h3>Get-Command</h3>
+        <p><strong>Descripción:</strong> Lista todos los comandos disponibles en PowerShell.</p>
+        <p><strong>Sintaxis:</strong> <code>Get-ChildItem [ruta] [-opciones]</code></p>
+        <pre><code>Get-ChildItem -Recurse
+Get-ChildItem C:\Users -Force</code></pre>
+        <a href="get-childitem.html" class="example-btn">Ejemplo</a>
+      </section>
+      <section class="command" data-mode="powershell">
+        <h3>Get-Location</h3>
+        <p><strong>Descripción:</strong>Muestra la ruta actual donde te encuentras.</p>
+        <p><strong>Sintaxis:</strong> <code>Get-ChildItem [ruta] [-opciones]</code></p>
+        <pre><code>Get-ChildItem -Recurse
+Get-ChildItem C:\Users -Force</code></pre>
+        <a href="get-childitem.html" class="example-btn">Ejemplo</a>
+      </section>
+      <section class="command" data-mode="powershell">
+        <h3>Get-Date</h3>
+        <p><strong>Descripción:</strong> Cambia de directorio o carpeta.</p>
+        <p><strong>Sintaxis:</strong> <code>Get-ChildItem [ruta] [-opciones]</code></p>
+        <pre><code>Get-ChildItem -Recurse
+Get-ChildItem C:\Users -Force</code></pre>
+        <a href="get-childitem.html" class="example-btn">Ejemplo</a>
+      </section>
+      <section class="command" data-mode="powershell">
+        <h3>Set-Location</h3>
+        <p><strong>Descripción:</strong> Lista archivos y carpetas en el directorio actual</p>
+        <p><strong>Sintaxis:</strong> <code>Get-ChildItem [ruta] [-opciones]</code></p>
+        <pre><code>Get-ChildItem -Recurse
+Get-ChildItem C:\Users -Force</code></pre>
+        <a href="get-childitem.html" class="example-btn">Ejemplo</a>
+      </section>
+    
+      </section>
+    </div>
+  </main>
+
+  <script src="../js/movi.js"></script>
+</body>
+</html>
