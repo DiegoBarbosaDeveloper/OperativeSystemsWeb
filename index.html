@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -20,36 +21,25 @@
 
         <div class="logo">
 
-            <span class="prompt">&gt;_</span>
+            <span class="terminal">>_</span>
 
-            <div class="title">
+            <div>
                 <h1>WinCmd Reference</h1>
                 <p>CMD y PowerShell</p>
             </div>
 
         </div>
 
-        <nav class="nav">
+        <nav>
 
-            <a href="#">Inicio</a>
+           
+            <a href="html/primer.html">Primer corte</a>
+            <a href="html/segundo.html">Segundo corte</a>
+            <a href="html/tercer.html">Tercer corte</a>
 
-            <div class="corte-buttons">
-
-                <a href="html/primer.html" class="corte-btn">
-                    Primer corte
-                </a>
-
-                <a href="html/segundo.html" class="corte-btn">
-                    Segundo corte
-                </a>
-
-                <a href="html/tercer.html" class="corte-btn">
-                    Tercer corte
-                </a>
-
-            </div>
-
-           <button id="toggleMode" class="mode-btn">🌙</button>
+            <button id="toggleMode">
+                <i class="fas fa-moon"></i>
+            </button>
 
         </nav>
 
@@ -59,48 +49,82 @@
 
     <section class="hero">
 
-        <div class="hero-content">
+        <div class="hero-left">
 
-            <div class="hero-text">
+            <h3>Bienvenido a</h3>
 
-                <h3>Bienvenido a</h3>
+            <h1>WinCmd Reference</h1>
 
-                <h1>WinCmd Reference</h1>
+            <h2>Tu guía práctica en sistemas</h2>
 
-                <h2>Tu guía práctica en sistemas</h2>
+            <div class="line"></div>
 
-                <div class="line"></div>
+            <p>
+                Explora herramientas, comandos y guías paso a paso
+                para fortalecer tus habilidades en administración
+                de sistemas y soporte técnico.
+            </p>
 
-                <p>
-                    Explora herramientas, comandos y guías paso a paso para fortalecer tus habilidades en
-                    administración de sistemas, soporte técnico y entornos virtualizados.
-                </p>
+            <div class="features">
 
-                <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Contenido práctico</span>
+                </div>
 
-                    <div class="feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Contenido práctico y actualizado</span>
-                    </div>
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <span>Guías claras</span>
+                </div>
 
-                    <div class="feature">
-                        <i class="fas fa-bolt"></i>
-                        <span>Guías claras y ejemplos</span>
-                    </div>
-
-                    <div class="feature">
-                        <i class="fas fa-crosshairs"></i>
-                        <span>Aprende a tu ritmo desde cero</span>
-                    </div>
-
+                <div class="feature">
+                    <i class="fas fa-crosshairs"></i>
+                    <span>Aprende desde cero</span>
                 </div>
 
             </div>
 
-            <div class="hero-image">
+        </div>
 
-                <!-- Reemplaza por tu avatar -->
+        <!-- ASISTENTE -->
+
+        <div class="assistant-area">
+
+            <div class="bubble">
+
+                ¡Hola! 👋<br>
+                Soy tu asistente.<br>
+                Pregúntame sobre los cortes.
+
+            </div>
+
+            <div class="avatar">
+
                 <img src="imagenes/windows/avatar.png" alt="Avatar">
+
+            </div>
+
+            <div class="questions">
+
+                <h3>Preguntas rápidas</h3>
+
+                <button onclick="mostrarRespuesta('primer')">
+                    ¿Qué incluye el primer corte?
+                </button>
+
+                <button onclick="mostrarRespuesta('segundo')">
+                    ¿Qué incluye el segundo corte?
+                </button>
+
+                <button onclick="mostrarRespuesta('tercer')">
+                    ¿Qué incluye el tercer corte?
+                </button>
+
+            </div>
+
+            <div class="response-card" id="respuesta">
+
+                Selecciona una pregunta.
 
             </div>
 
@@ -112,112 +136,66 @@
 
     <section class="cards">
 
-        <div class="card red" id="primer-corte">
+        <div class="card red" id="primer">
 
             <span class="badge">01</span>
 
-            <h4>Primer corte</h4>
+            <h3>Primer corte</h3>
 
-            <h2>Comandos de CMD y PowerShell</h2>
-
-            <p>
-                Aprende a utilizar los comandos esenciales de CMD y PowerShell para administrar,
-                diagnosticar y optimizar sistemas Windows.
-            </p>
+            <h2>CMD y PowerShell</h2>
 
             <ul>
-                <li>Comandos básicos y avanzados</li>
-                <li>Administración de archivos y carpetas</li>
-                <li>Redes y conectividad</li>
-                <li>Diagnóstico y mantenimiento</li>
+                <li>Comandos CMD</li>
+                <li>PowerShell</li>
+                <li>Redes</li>
+                <li>Diagnóstico Windows</li>
             </ul>
-
-            <button>Explorar contenido</button>
 
         </div>
 
-        <div class="card blue" id="segundo-corte">
+        <div class="card blue" id="segundo">
 
             <span class="badge">02</span>
 
-            <h4>Segundo corte</h4>
+            <h3>Segundo corte</h3>
 
-            <h2>Instalación de Linux y Windows en VirtualBox</h2>
-
-            <p>
-                Guías completas para instalar y configurar máquinas virtuales paso a paso.
-            </p>
+            <h2>Linux y VirtualBox</h2>
 
             <ul>
-                <li>Instalación de VirtualBox</li>
-                <li>Configuración de máquinas virtuales</li>
-                <li>Ubuntu Linux</li>
+                <li>Ubuntu</li>
                 <li>Windows</li>
+                <li>VirtualBox</li>
+                <li>Máquinas virtuales</li>
             </ul>
-
-            <button>Explorar contenido</button>
 
         </div>
 
-        <div class="card green" id="tercer-corte">
+        <div class="card green" id="tercer">
 
             <span class="badge">03</span>
 
-            <h4>Tercer corte</h4>
+            <h3>Tercer corte</h3>
 
-            <h2>Diagnóstico y Herramientas de Soporte TI</h2>
-
-            <p>
-                Herramientas esenciales para el mantenimiento, monitoreo y soporte técnico.
-            </p>
+            <h2>Soporte TI</h2>
 
             <ul>
-                <li>AnyDesk y TeamViewer</li>
-                <li>RAM y Procesador</li>
-                <li>Almacenamiento</li>
-                <li>Buenas prácticas</li>
+                <li>RAM</li>
+                <li>Discos</li>
+                <li>Redes</li>
+                <li>Mantenimiento</li>
             </ul>
 
-            <button>Explorar contenido</button>
-
-        </div>
-
-    </section>
-
-    <!-- BENEFICIOS -->
-
-    <section class="benefits">
-
-        <div class="benefit">
-            <i class="fas fa-graduation-cap"></i>
-            <h3>Aprendizaje práctico</h3>
-            <p>Ejemplos reales y explicaciones paso a paso.</p>
-        </div>
-
-        <div class="benefit">
-            <i class="fas fa-book-open"></i>
-            <h3>Contenido organizado</h3>
-            <p>Temas estructurados para aprender sin complicaciones.</p>
-        </div>
-
-        <div class="benefit">
-            <i class="fas fa-shield-alt"></i>
-            <h3>Enfocado en ti</h3>
-            <p>Material creado para estudiantes y técnicos.</p>
-        </div>
-
-        <div class="benefit">
-            <i class="fas fa-rocket"></i>
-            <h3>Mejora cada día</h3>
-            <p>Sigue aprendiendo y creciendo profesionalmente.</p>
         </div>
 
     </section>
 
     <footer>
-        © 2026 WinCmd Reference 
+        © 2025 WinCmd Reference
     </footer>
-<script src="js/movi.js"></script>
+
+    <script src="js/movi.js"></script>
+
 </body>
 
 </html>
+```
